@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2xrqx5y4t47l"]
+
+[ext_resource type="Script" uid="uid://c3c2o1rxbvd8h" path="res://Collectibles/butterfly_knife.gd" id="1_k2ftn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6w7pv"]
+size = Vector2(148, 126)
+
+[node name="Butterfly Knife" type="Node2D"]
+
+[node name="Butterfly Knife" type="Area2D" parent="."]
+script = ExtResource("1_k2ftn")
+
+[node name="Sprite2D" type="Sprite2D" parent="Butterfly Knife"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Butterfly Knife"]
+position = Vector2(1, -1)
+shape = SubResource("RectangleShape2D_6w7pv")
