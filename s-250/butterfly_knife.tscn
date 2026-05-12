@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2xrqx5y4t47l"]
+[gd_scene load_steps=4 format=3 uid="uid://b2xrqx5y4t47l"]
 
 [ext_resource type="Script" uid="uid://c3c2o1rxbvd8h" path="res://Collectibles/butterfly_knife.gd" id="1_k2ftn"]
+[ext_resource type="Texture2D" uid="uid://cqknrmlgpsvcs" path="res://Collectibles/butterflyknife.png" id="2_6w7pv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6w7pv"]
-size = Vector2(148, 126)
+size = Vector2(91, 102)
 
 [node name="Butterfly Knife" type="Node2D"]
 
@@ -11,7 +12,8 @@ size = Vector2(148, 126)
 script = ExtResource("1_k2ftn")
 
 [node name="Sprite2D" type="Sprite2D" parent="Butterfly Knife"]
+texture = ExtResource("2_6w7pv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Butterfly Knife"]
-position = Vector2(1, -1)
+position = Vector2(29, -14)
 shape = SubResource("RectangleShape2D_6w7pv")
